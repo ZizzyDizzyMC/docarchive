@@ -5,7 +5,7 @@ searchStr = 'data.docsbay.net%2fpdf%2f([a-zA-Z0-9].*).pdf'
 searchTitle = '<title>(.+) - DocsBay<\/title>'
 # Arguments
 parser = argparse.ArgumentParser(description='Download a pdf from Docsbay.')
-parser.add_argument('--url', metavar='-U', type=str, help="Url to download.")
+parser.add_argument('url', metavar='U', type=str, help="Url to download.")
 parser.add_argument('--dir', metavar='-D', default=os.path.realpath('.'), help="Directory to save to.")
 parser.add_argument('--title', action='store_true', help="Output file as title name.")
 args = parser.parse_args()
